@@ -46,7 +46,7 @@ class Graph:
                 self.graph[v][u] += path_flow
                 v = parent[v]
         return max_flow
-'''
+
 count = int(input("Input number of vertices:"))
 graph = []
 for i in range(0,count):
@@ -68,6 +68,7 @@ graph = [[0, float('inf'), float('inf'), 0, 0, 0],
 [0, 0, 0, 0, 0, 6],
 [0, 0, 0, 0, 0, 0]]
 print(graph)
+'''
 g = Graph(graph)
 source = int(input("Input source of graph "))
 sink = int(input("Input sink of graph "))
